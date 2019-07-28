@@ -18,6 +18,6 @@ if (process.env.NODE_ENV === 'production') {
 app.use(routes);
 
 mongoose.Promise = Promise;
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/googlebooks', {useNewUrlParser: true});
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:3001', {useNewUrlParser: true});
 
 app.listen(PORT, () => console.log(`Now listening on http://localhost:${PORT}`));
